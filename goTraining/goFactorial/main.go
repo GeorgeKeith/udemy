@@ -18,7 +18,7 @@ func main() {
 
 func factorial(n int) int32 {
 	m := runtime.NumCPU() - 1 // for main
-	if (n < m) {
+	if n < m {
 		m = n
 	}
 	term := make(chan int)
